@@ -1,0 +1,6 @@
+Nasıl Kurulur ve Kullanılır?
+Google Play Store gibi resmi mağazalarda yer almadığından, kurulum için şu genel adımlar izlenir:
+APK İndirme: Uygulamanın resmi GitHub sayfası veya güvenilir kaynaklar üzerinden güncel APK dosyası indirilir.  
+Bilinmeyen Kaynaklar: Android cihazın ayarlarından "Bilinmeyen Kaynaklardan Uygulama Yükleme" izni aktif hale getirilir.  
+Kurulum: İndirilen APK dosyası çalıştırılarak cihaza kurulur.
+Eklenti (Repo) Ekleme: Uygulama açıldıktan sonra Ayarlar > Uzantılar > Depo Ekle adımları takip edilerek topluluk tarafından oluşturulan depolar eklenir. Bu sayede film ve dizi listeleri aktif hale gelir.
