@@ -1,0 +1,8 @@
+{
+  "name": "Sancak",
+  "description": "",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/darknesslord19/Sancak/main/plugins.json"
+  ]
+}
