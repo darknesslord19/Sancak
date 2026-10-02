@@ -18,5 +18,25 @@
     ],
     "iconUrl": null,
     "fileSize": 72383
+  },
+  {
+    "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/StreamCenter_Turkce.cs3",
+    "status": 1,
+    "version": 10,
+    "apiVersion": 1,
+    "name": "StreamCenter",
+    "internalName": "StreamCenter_Turkce",
+    "authors": [
+      "darknesslord19"
+    ],
+    "description": "",
+    "repositoryUrl": "https://github.com/darknesslord19/Sancak",
+    "language": "tr",
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "iconUrl": null,
+    "fileSize": 1667616
   }
 ]
