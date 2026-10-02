@@ -692,7 +692,7 @@ public class DomainStore {
             if (x == null) continue;
             String n = x.optString("name", ""), p = x.optString("path", "");
             if (n.length() == 0 && p.length() == 0) continue;
-            out.add(new String[] { n, p, orig ? x.optString("orig", "") : "" });
+            out.add(new String[] { n, p, orig ? x.optString("orig", "") : "", x.optBoolean("enabled", true) ? "1" : "0" });
         }
         return out;
     }
@@ -706,7 +706,7 @@ public class DomainStore {
             java.util.List<?> orig = origOf(api);
             if (orig == null) return out;
             String mu = mainUrlOf(api);
-            for (Object s : orig) { String n = str(s, "getName"); out.add(new String[] { n, relPath(mu, str(s, "getData")), n }); }
+            for (Object s : orig) { String n = str(s, "getName"); out.add(new String[] { n, relPath(mu, str(s, "getData")), n, "1" }); }
         } catch (Throwable t) { }
         return out;
     }
@@ -752,7 +752,7 @@ public class DomainStore {
     static boolean sameList(java.util.ArrayList<String[]> a, java.util.ArrayList<String[]> b) {
         if (a.size() != b.size()) return false;
         for (int i = 0; i < a.size(); i++)
-            if (!a.get(i)[0].trim().equals(b.get(i)[0].trim()) || !a.get(i)[1].trim().equals(b.get(i)[1].trim())) return false;
+            if (!a.get(i)[0].trim().equals(b.get(i)[0].trim()) || !a.get(i)[1].trim().equals(b.get(i)[1].trim()) || ("1".equals(a.get(i).length > 3 ? a.get(i)[3] : "1") != "1".equals(b.get(i).length > 3 ? b.get(i)[3] : "1"))) return false;
         return true;
     }
 
@@ -762,6 +762,7 @@ public class DomainStore {
             if (i > 0) b.append(",");
             b.append("{\"name\":").append(q(l.get(i)[0])).append(",\"path\":").append(q(l.get(i)[1]));
             if (orig) b.append(",\"orig\":").append(q(l.get(i)[2]));
+            b.append(",\"enabled\":").append("1".equals(l.get(i).length > 3 ? l.get(i)[3] : "1"));
             b.append("}");
         }
         return b.append("]").toString();
@@ -816,7 +817,8 @@ public class DomainStore {
                     String nm = d[1].length() > 0 ? d[1] : hostOf(d[0]);
                     int ci = nm.indexOf(':');
                     b.append("{\"id\":").append(q(id(d[0], d[1]))).append(",\"label\":").append(q(ci >= 0 ? nm.substring(ci + 1) : nm))
-                     .append(",\"value\":").append(q(eff(d[0], d[1]))).append(",\"default\":").append(q(baseOf(p, d[0], d[1]))).append("}");
+                     .append(",\"value\":").append(q(eff(d[0], d[1]))).append(",\"default\":").append(q(baseOf(p, d[0], d[1])))
+                     .append(",\"enabled\":").append(p == null || !p.contains("en:d:" + id(d[0], d[1])) ? true : p.getBoolean("en:d:" + id(d[0], d[1]), true)).append("}");
                 }
             }
             b.append("],\"options\":[");
@@ -833,7 +835,8 @@ public class DomainStore {
                 if (!fo) b.append(",");
                 fo = false;
                 b.append("{\"key\":").append(q(k)).append(",\"group\":").append(q(x.optString("group", "other"))).append(",\"label\":").append(q(x.optString("label", k)))
-                 .append(",\"value\":").append(q(val)).append(",\"default\":").append(q(def)).append("}");
+                 .append(",\"value\":").append(q(val)).append(",\"default\":").append(q(def))
+                 .append(",\"enabled\":").append(p == null || !p.contains("en:" + k) ? x.optBoolean("enabled", true) : p.getBoolean("en:" + k, true)).append("}");
             }
             for (java.util.Map.Entry<String, String> s : SEENS.entrySet()) {
                 if (!done.add(s.getKey())) continue;
@@ -841,10 +844,44 @@ public class DomainStore {
                 if (!fo) b.append(",");
                 fo = false;
                 b.append("{\"key\":").append(q(s.getKey())).append(",\"group\":\"other\",\"label\":").append(q("Sabit " + s.getKey()))
-                 .append(",\"value\":").append(q(val)).append(",\"default\":").append(q(s.getValue())).append("}");
+                 .append(",\"value\":").append(q(val)).append(",\"default\":").append(q(s.getValue())).append(",\"enabled\":true}");
             }
             return b.append("]}").toString();
         } catch (Throwable t) { log("Ayarlar okunamadi: " + t); return "{}"; }
+    }
+
+    // Ayarlar ekranındaki mevcut değerleri indirilen update.json kaydına da yazar.
+    // Bu, uzak GitHub dosyasını değiştirmez; uygulamadaki son indirilen JSON kaydını günceller.
+    public static boolean saveSettingsToUpdateJson(String json) {
+        try {
+            SharedPreferences p = sp();
+            if (p == null) return false;
+            JSONObject incoming = new JSONObject(json);
+            JSONObject root = new JSONObject(p.getString("upd", "{}"));
+            boolean rootSingle = root.has("sections") || root.has("categories") || root.has("options") || root.has("domains");
+            String[] fields = new String[]{"version","sections","categories","domains","options"};
+            if (rootSingle) {
+                for (String f : fields) if (incoming.has(f)) root.put(f, incoming.get(f));
+                p.edit().putString("upd", root.toString()).apply();
+            } else {
+                JSONObject target = pickEntry(root);
+                if (target == null) target = new JSONObject();
+                for (String f : fields) if (incoming.has(f)) target.put(f, incoming.get(f));
+                String want = nameKey(PLUGIN);
+                boolean placed = false;
+                java.util.Iterator<String> it = root.keys();
+                while (it.hasNext()) {
+                    String k = it.next();
+                    if (nameKey(k).equals(want)) { root.put(k, target); placed = true; break; }
+                }
+                if (!placed) root.put(PLUGIN.length() > 0 ? PLUGIN : "plugin", target);
+                p.edit().putString("upd", root.toString()).apply();
+            }
+            updLoaded = false;
+            SC.clear();
+            loadUpd();
+            return true;
+        } catch (Throwable t) { log("JSON kaydedilemedi: " + t); return false; }
     }
 
     public static boolean saveSettingsJson(String json) {
@@ -863,6 +900,8 @@ public class DomainStore {
                 String base = rem != null && rem.length() > 0 ? rem : def;
                 if (v.length() == 0 || v.equals(base)) p.edit().remove("o:" + k).apply();
                 else { p.edit().putString("o:" + k, v).apply(); changed++; }
+                if (x.optBoolean("enabled", true)) p.edit().remove("en:" + k).apply();
+                else p.edit().putBoolean("en:" + k, false).apply();
             }
             JSONArray doms = o.optJSONArray("domains");
             if (doms != null) for (int i = 0; i < doms.length(); i++) {
@@ -874,6 +913,8 @@ public class DomainStore {
                 if (hit == null) continue;
                 String base = baseOf(p, hit[0], hit[1]);
                 if (v.length() == 0 || norm(v).equals(norm(base))) setManualFor(did, ""); else { setManualFor(did, v); changed++; }
+                if (x.optBoolean("enabled", true)) p.edit().remove("en:d:" + did).apply();
+                else p.edit().putBoolean("en:d:" + did, false).apply();
             }
             java.util.ArrayList<String[]> secs = toList(o.optJSONArray("sections"), true);
             if (o.optJSONArray("sections") != null) {
