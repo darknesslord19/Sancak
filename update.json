@@ -1,0 +1,443 @@
+{
+  "Anizm": {
+    "version": 1,
+    "sections": [],
+    "categories": [],
+    "options": [
+      {
+        "key": "s_be0fc7ea",
+        "group": "search",
+        "label": "Yol 1",
+        "value": "/fullViewSearch",
+        "default": "/fullViewSearch"
+      },
+      {
+        "key": "s_38f97ac6",
+        "group": "search",
+        "label": "Yol 2",
+        "value": "/fullViewSearch?search=",
+        "default": "/fullViewSearch?search="
+      },
+      {
+        "key": "s_d1177eec",
+        "group": "search",
+        "label": "Yol 3",
+        "value": "/searchAnime?query=",
+        "default": "/searchAnime?query="
+      },
+      {
+        "key": "s_efc7d11c",
+        "group": "paging",
+        "label": "Sorgu 1",
+        "value": "&page=1",
+        "default": "&page=1"
+      },
+      {
+        "key": "s_e5341a98",
+        "group": "paging",
+        "label": "Sorgu 2",
+        "value": "?page=",
+        "default": "?page="
+      },
+      {
+        "key": "s_a1116f24",
+        "group": "listSel",
+        "label": "CSS seçici 1",
+        "value": ".css",
+        "default": ".css"
+      },
+      {
+        "key": "s_528bd155",
+        "group": "listSel",
+        "label": "CSS seçici 2",
+        "value": ".gif",
+        "default": ".gif"
+      },
+      {
+        "key": "s_f90fad8f",
+        "group": "listSel",
+        "label": "CSS seçici 3",
+        "value": ".jpeg",
+        "default": ".jpeg"
+      },
+      {
+        "key": "s_52bc0ecc",
+        "group": "listSel",
+        "label": "CSS seçici 4",
+        "value": ".jpg",
+        "default": ".jpg"
+      },
+      {
+        "key": "s_4d1b2776",
+        "group": "listSel",
+        "label": "CSS seçici 5",
+        "value": ".js",
+        "default": ".js"
+      },
+      {
+        "key": "s_433f52e0",
+        "group": "listSel",
+        "label": "CSS seçici 6",
+        "value": ".png",
+        "default": ".png"
+      },
+      {
+        "key": "s_cf871d35",
+        "group": "listSel",
+        "label": "CSS seçici 7",
+        "value": ".svg",
+        "default": ".svg"
+      },
+      {
+        "key": "s_4cb8f0df",
+        "group": "listSel",
+        "label": "CSS seçici 8",
+        "value": ".webp",
+        "default": ".webp"
+      },
+      {
+        "key": "s_9205578f",
+        "group": "listSel",
+        "label": "CSS seçici 9",
+        "value": "a[href]",
+        "default": "a[href]"
+      },
+      {
+        "key": "s_64c1a726",
+        "group": "listSel",
+        "label": "CSS seçici 10",
+        "value": "a[translator]",
+        "default": "a[translator]"
+      },
+      {
+        "key": "s_9bc16f18",
+        "group": "listSel",
+        "label": "CSS seçici 11",
+        "value": "div.title, h5.animeTitle a, .title, h5, h4, h3",
+        "default": "div.title, h5.animeTitle a, .title, h5, h4, h3"
+      },
+      {
+        "key": "s_a8a1a968",
+        "group": "listSel",
+        "label": "CSS seçici 12",
+        "value": "div.title, span",
+        "default": "div.title, span"
+      },
+      {
+        "key": "s_44b05863",
+        "group": "listSel",
+        "label": "CSS seçici 13",
+        "value": "h2.anizm_pageTitle a, h2.anizm_pageTitle, h1.anizm_pageTitle, h1",
+        "default": "h2.anizm_pageTitle a, h2.anizm_pageTitle, h1.anizm_pageTitle, h1"
+      },
+      {
+        "key": "s_072af362",
+        "group": "listSel",
+        "label": "CSS seçici 14",
+        "value": "meta[property='og:title']",
+        "default": "meta[property='og:title']"
+      },
+      {
+        "key": "s_7225e622",
+        "group": "listSel",
+        "label": "CSS seçici 15",
+        "value": "span.dataValue",
+        "default": "span.dataValue"
+      },
+      {
+        "key": "s_fc347dc7",
+        "group": "listSel",
+        "label": "CSS seçici 16",
+        "value": "span.dataValue > span.tag > span.label, span.dataValue span.ui.label",
+        "default": "span.dataValue > span.tag > span.label, span.dataValue span.ui.label"
+      },
+      {
+        "key": "s_e4106ea0",
+        "group": "detailSel",
+        "label": "CSS seçici 1",
+        "value": "[data-imdb-id]",
+        "default": "[data-imdb-id]"
+      },
+      {
+        "key": "s_e353c590",
+        "group": "detailSel",
+        "label": "CSS seçici 2",
+        "value": "[data-imdb]",
+        "default": "[data-imdb]"
+      },
+      {
+        "key": "s_4a5d11b1",
+        "group": "detailSel",
+        "label": "CSS seçici 3",
+        "value": "a[href*='imdb.com/title/']",
+        "default": "a[href*='imdb.com/title/']"
+      },
+      {
+        "key": "s_edde11cb",
+        "group": "detailSel",
+        "label": "CSS seçici 4",
+        "value": "div.infoDesc",
+        "default": "div.infoDesc"
+      },
+      {
+        "key": "s_6a54d2cf",
+        "group": "detailSel",
+        "label": "CSS seçici 5",
+        "value": "div.infoPosterImg > img, div.infoPosterImg img",
+        "default": "div.infoPosterImg > img, div.infoPosterImg img"
+      },
+      {
+        "key": "s_f695a84f",
+        "group": "detailSel",
+        "label": "CSS seçici 6",
+        "value": "div.infoSta li, div.anizm_boxContent li.dataRow",
+        "default": "div.infoSta li, div.anizm_boxContent li.dataRow"
+      },
+      {
+        "key": "s_ab2bae47",
+        "group": "detailSel",
+        "label": "CSS seçici 7",
+        "value": "div.searchResultItem, div.posterBlock",
+        "default": "div.searchResultItem, div.posterBlock"
+      },
+      {
+        "key": "s_62ac4b70",
+        "group": "episodeSel",
+        "label": "CSS seçici 1",
+        "value": "div.episodeBlock",
+        "default": "div.episodeBlock"
+      },
+      {
+        "key": "s_21ae4b36",
+        "group": "episodeSel",
+        "label": "CSS seçici 2",
+        "value": "div.truncateText, div.episodeBlock",
+        "default": "div.truncateText, div.episodeBlock"
+      },
+      {
+        "key": "s_d480f118",
+        "group": "player",
+        "label": "CSS seçici 1",
+        "value": ".m3u8",
+        "default": ".m3u8"
+      },
+      {
+        "key": "s_1c53eb08",
+        "group": "player",
+        "label": "CSS seçici 2",
+        "value": ".mp4",
+        "default": ".mp4"
+      },
+      {
+        "key": "s_1e4225b3",
+        "group": "player",
+        "label": "CSS seçici 3",
+        "value": "a[video]",
+        "default": "a[video]"
+      },
+      {
+        "key": "s_e2d6ad75",
+        "group": "player",
+        "label": "Desen 1",
+        "value": "file:\\s*[\\\"']([^\\\"']+)[\\\"']",
+        "default": "file:\\s*[\\\"']([^\\\"']+)[\\\"']"
+      },
+      {
+        "key": "s_d2e77495",
+        "group": "http",
+        "label": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "default": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+      },
+      {
+        "key": "s_83eeada8",
+        "group": "other",
+        "label": "Sorgu 1",
+        "value": "&do=getVideo",
+        "default": "&do=getVideo"
+      },
+      {
+        "key": "s_c7862663",
+        "group": "other",
+        "label": "Sorgu 2",
+        "value": "&skip=0",
+        "default": "&skip=0"
+      },
+      {
+        "key": "s_9cbdfa41",
+        "group": "other",
+        "label": "Desen 1",
+        "value": "(?:const|var|let)\\s+url\\s*=\\s*[\\\"']([^\\\"']+)[\\\"']",
+        "default": "(?:const|var|let)\\s+url\\s*=\\s*[\\\"']([^\\\"']+)[\\\"']"
+      },
+      {
+        "key": "s_b778d971",
+        "group": "other",
+        "label": "Yol 1",
+        "value": "/anime-izle",
+        "default": "/anime-izle"
+      },
+      {
+        "key": "s_73200d6c",
+        "group": "other",
+        "label": "Yol 2",
+        "value": "/cdn/hls/",
+        "default": "/cdn/hls/"
+      },
+      {
+        "key": "s_b01ed055",
+        "group": "other",
+        "label": "Yol 3",
+        "value": "/favori",
+        "default": "/favori"
+      },
+      {
+        "key": "s_a1fbba44",
+        "group": "other",
+        "label": "Yol 4",
+        "value": "/giris",
+        "default": "/giris"
+      },
+      {
+        "key": "s_de1e4cca",
+        "group": "other",
+        "label": "Yol 5",
+        "value": "/kategoriler/",
+        "default": "/kategoriler/"
+      },
+      {
+        "key": "s_a4b32f21",
+        "group": "other",
+        "label": "Yol 6",
+        "value": "/kategoriler/1",
+        "default": "/kategoriler/1"
+      },
+      {
+        "key": "s_58131956",
+        "group": "other",
+        "label": "Yol 7",
+        "value": "/kategoriler/13",
+        "default": "/kategoriler/13"
+      },
+      {
+        "key": "s_a1b32a68",
+        "group": "other",
+        "label": "Yol 8",
+        "value": "/kategoriler/2",
+        "default": "/kategoriler/2"
+      },
+      {
+        "key": "s_eb0bb1fa",
+        "group": "other",
+        "label": "Yol 9",
+        "value": "/kategoriler/26",
+        "default": "/kategoriler/26"
+      },
+      {
+        "key": "s_a2b32bfb",
+        "group": "other",
+        "label": "Yol 10",
+        "value": "/kategoriler/3",
+        "default": "/kategoriler/3"
+      },
+      {
+        "key": "s_ef0df6dd",
+        "group": "other",
+        "label": "Yol 11",
+        "value": "/kategoriler/34",
+        "default": "/kategoriler/34"
+      },
+      {
+        "key": "s_a7b333da",
+        "group": "other",
+        "label": "Yol 12",
+        "value": "/kategoriler/4",
+        "default": "/kategoriler/4"
+      },
+      {
+        "key": "s_a8b3356d",
+        "group": "other",
+        "label": "Yol 13",
+        "value": "/kategoriler/5",
+        "default": "/kategoriler/5"
+      },
+      {
+        "key": "s_9bb320f6",
+        "group": "other",
+        "label": "Yol 14",
+        "value": "/kategoriler/8",
+        "default": "/kategoriler/8"
+      },
+      {
+        "key": "s_31cd703c",
+        "group": "other",
+        "label": "Yol 15",
+        "value": "/kayit",
+        "default": "/kayit"
+      },
+      {
+        "key": "s_8aa1ad9d",
+        "group": "other",
+        "label": "Yol 16",
+        "value": "/liste",
+        "default": "/liste"
+      },
+      {
+        "key": "s_e5292a2b",
+        "group": "other",
+        "label": "Yol 17",
+        "value": "/sasirt-beni",
+        "default": "/sasirt-beni"
+      },
+      {
+        "key": "s_5a1dcc96",
+        "group": "other",
+        "label": "Yol 18",
+        "value": "/takvim",
+        "default": "/takvim"
+      },
+      {
+        "key": "s_4cdf63ec",
+        "group": "other",
+        "label": "Yol 19",
+        "value": "/tavsiyeRobotu",
+        "default": "/tavsiyeRobotu"
+      },
+      {
+        "key": "s_46f34f83",
+        "group": "other",
+        "label": "Yol 20",
+        "value": "/temalar/",
+        "default": "/temalar/"
+      },
+      {
+        "key": "s_f926623c",
+        "group": "other",
+        "label": "Yol 21",
+        "value": "/uyeol",
+        "default": "/uyeol"
+      },
+      {
+        "key": "s_1ffa3b1a",
+        "group": "other",
+        "label": "Sorgu 3",
+        "value": "?0",
+        "default": "?0"
+      },
+      {
+        "key": "s_f5252e38",
+        "group": "other",
+        "label": "Desen 2",
+        "value": "\\b(19|20)\\d{2}\\b",
+        "default": "\\b(19|20)\\d{2}\\b"
+      },
+      {
+        "key": "s_d1741fcd",
+        "group": "other",
+        "label": "Desen 3",
+        "value": "tt[0-9]{7,9}",
+        "default": "tt[0-9]{7,9}"
+      }
+    ]
+  }
+}
