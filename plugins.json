@@ -20,6 +20,26 @@
     "fileSize": 72614
   },
   {
+    "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/plt-tv.cs3",
+    "status": 1,
+    "version": 6,
+    "apiVersion": 1,
+    "name": "Darknes-m3u",
+    "internalName": "plt-tv",
+    "authors": [
+      "darknesslord19"
+    ],
+    "description": "",
+    "repositoryUrl": "https://github.com/darknesslord19/Sancak",
+    "language": "tr",
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "iconUrl": null,
+    "fileSize": 48570
+  },
+  {
     "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/Dizilla.cs3",
     "status": 1,
     "version": 92,
@@ -58,26 +78,6 @@
     ],
     "iconUrl": null,
     "fileSize": 77098
-  },
-  {
-    "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/plt-tv.cs3",
-    "status": 1,
-    "version": 6,
-    "apiVersion": 1,
-    "name": "plt-tv",
-    "internalName": "plt-tv",
-    "authors": [
-      "darknesslord19"
-    ],
-    "description": "",
-    "repositoryUrl": "https://github.com/darknesslord19/Sancak",
-    "language": "tr",
-    "tvTypes": [
-      "Movie",
-      "TvSeries"
-    ],
-    "iconUrl": null,
-    "fileSize": 48565
   },
   {
     "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/StreamCenter_Turkce.cs3",
