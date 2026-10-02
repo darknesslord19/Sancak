@@ -23,5 +23,10 @@
     "name": "Darknes-Film-Tv",
     "desc": "Yerel yabanci filmler",
     "url": "https://raw.githubusercontent.com/darkneslord19/Movies/main/filmler_full.m3u"
+  },
+  {
+    "name": "Darknes-Sinema",
+    "desc": "Sinemalardan esintiler",
+    "url": "https://tinyurl.com/2ao2rans"
   }
 ]
