@@ -441,429 +441,588 @@
     ]
   },
   "DiziPal": {
-    "version": 1,
-    "sections": [],
-    "categories": [],
+    "version": 2,
+    "sections": [
+      {
+        "name": "Anime",
+        "path": "/anime",
+        "orig": "Anime"
+      },
+      {
+        "name": "Dizi",
+        "path": "/dizi/",
+        "orig": "Dizi"
+      },
+      {
+        "name": "Film",
+        "path": "/film/",
+        "orig": "Film"
+      },
+      {
+        "name": "Movies",
+        "path": "/movies/",
+        "orig": "Movies"
+      },
+      {
+        "name": "Series",
+        "path": "/series/",
+        "orig": "Series"
+      }
+    ],
+    "categories": [
+      {
+        "name": "Kategori",
+        "path": "/kategori/"
+      },
+      {
+        "name": "Tur",
+        "path": "/tur/"
+      }
+    ],
     "options": [
       {
         "key": "s_052bf2f3",
         "group": "search",
         "label": "Yol 1",
         "value": "/bg/searchcontent",
-        "default": "/bg/searchcontent"
+        "default": "/bg/searchcontent",
+        "kind": "path"
       },
       {
         "key": "s_ce2713e0",
         "group": "paging",
         "label": "Sorgu 1",
         "value": "&sayfa=",
-        "default": "&sayfa="
+        "default": "&sayfa=",
+        "kind": "query"
       },
       {
         "key": "s_e71d43d3",
         "group": "paging",
         "label": "Sorgu 2",
         "value": "?sayfa=",
-        "default": "?sayfa="
+        "default": "?sayfa=",
+        "kind": "query"
+      },
+      {
+        "key": "s_ca3f7526",
+        "group": "section",
+        "label": "Yol 1",
+        "value": "/anime",
+        "default": "/anime",
+        "kind": "path"
+      },
+      {
+        "key": "s_5f25c9b9",
+        "group": "section",
+        "label": "Yol 2",
+        "value": "/dizi/",
+        "default": "/dizi/",
+        "kind": "path"
+      },
+      {
+        "key": "s_668b3e3d",
+        "group": "section",
+        "label": "Yol 3",
+        "value": "/film/",
+        "default": "/film/",
+        "kind": "path"
+      },
+      {
+        "key": "s_eb34f2b8",
+        "group": "section",
+        "label": "Yol 4",
+        "value": "/movies/",
+        "default": "/movies/",
+        "kind": "path"
+      },
+      {
+        "key": "s_63eabf18",
+        "group": "section",
+        "label": "Yol 5",
+        "value": "/series/",
+        "default": "/series/",
+        "kind": "path"
+      },
+      {
+        "key": "s_7e3f4103",
+        "group": "category",
+        "label": "Yol 1",
+        "value": "/kategori/",
+        "default": "/kategori/",
+        "kind": "path"
+      },
+      {
+        "key": "s_72947d22",
+        "group": "category",
+        "label": "Yol 2",
+        "value": "/tur/",
+        "default": "/tur/",
+        "kind": "path"
       },
       {
         "key": "s_0775119b",
         "group": "listSel",
         "label": "CSS seçici 1",
         "value": "[style*='background-image']",
-        "default": "[style*='background-image']"
+        "default": "[style*='background-image']",
+        "kind": "sel"
       },
       {
         "key": "s_09ee89d7",
         "group": "listSel",
         "label": "CSS seçici 2",
         "value": "a[data-dizipal-pageloader], a[href]",
-        "default": "a[data-dizipal-pageloader], a[href]"
+        "default": "a[data-dizipal-pageloader], a[href]",
+        "kind": "sel"
       },
       {
         "key": "s_2f4ca78e",
         "group": "listSel",
         "label": "CSS seçici 3",
         "value": "a[href*='/tur/'], a[href*='/kategori/']",
-        "default": "a[href*='/tur/'], a[href*='/kategori/']"
+        "default": "a[href*='/tur/'], a[href*='/kategori/']",
+        "kind": "sel"
       },
       {
         "key": "s_9205578f",
         "group": "listSel",
         "label": "CSS seçici 4",
         "value": "a[href]",
-        "default": "a[href]"
+        "default": "a[href]",
+        "kind": "sel"
       },
       {
         "key": "s_ede7a4ae",
         "group": "listSel",
         "label": "CSS seçici 5",
         "value": "div.flex h2, h1",
-        "default": "div.flex h2, h1"
+        "default": "div.flex h2, h1",
+        "kind": "sel"
       },
       {
         "key": "s_6e008193",
         "group": "listSel",
         "label": "CSS seçici 6",
         "value": "div.page-top img[alt]",
-        "default": "div.page-top img[alt]"
+        "default": "div.page-top img[alt]",
+        "kind": "sel"
       },
       {
         "key": "s_39e12601",
         "group": "listSel",
         "label": "CSS seçici 7",
         "value": "div.text-white.text-sm.opacity-80",
-        "default": "div.text-white.text-sm.opacity-80"
+        "default": "div.text-white.text-sm.opacity-80",
+        "kind": "sel"
       },
       {
         "key": "s_ea88f253",
         "group": "listSel",
         "label": "CSS seçici 8",
         "value": "div[data-rm-k=true]",
-        "default": "div[data-rm-k=true]"
+        "default": "div[data-rm-k=true]",
+        "kind": "sel"
       },
       {
         "key": "s_3af98ff9",
         "group": "listSel",
         "label": "CSS seçici 9",
         "value": "h2, small, strong",
-        "default": "h2, small, strong"
+        "default": "h2, small, strong",
+        "kind": "sel"
       },
       {
         "key": "s_d705f69f",
         "group": "listSel",
         "label": "CSS seçici 10",
         "value": "input[name=channelId]",
-        "default": "input[name=channelId]"
+        "default": "input[name=channelId]",
+        "kind": "sel"
       },
       {
         "key": "s_6fd2a071",
         "group": "listSel",
         "label": "CSS seçici 11",
         "value": "meta[property='og:image']",
-        "default": "meta[property='og:image']"
-      },
-      {
-        "key": "s_072af362",
-        "group": "listSel",
-        "label": "CSS seçici 12",
-        "value": "meta[property='og:title']",
-        "default": "meta[property='og:title']"
+        "default": "meta[property='og:image']",
+        "kind": "sel"
       },
       {
         "key": "s_2416e6b1",
         "group": "detailSel",
         "label": "CSS seçici 1",
         "value": ".imdb, .rating, .dp-rating, span[class*='imdb'], div[class*='imdb']",
-        "default": ".imdb, .rating, .dp-rating, span[class*='imdb'], div[class*='imdb']"
+        "default": ".imdb, .rating, .dp-rating, span[class*='imdb'], div[class*='imdb']",
+        "kind": "sel"
       },
       {
         "key": "s_a85997ef",
         "group": "detailSel",
         "label": "CSS seçici 2",
         "value": "div.summary p, meta[name='description']",
-        "default": "div.summary p, meta[name='description']"
+        "default": "div.summary p, meta[name='description']",
+        "kind": "sel"
       },
       {
         "key": "s_6e294a98",
         "group": "detailSel",
         "label": "CSS seçici 3",
         "value": "meta[name='description']",
-        "default": "meta[name='description']"
+        "default": "meta[name='description']",
+        "kind": "sel"
+      },
+      {
+        "key": "s_072af362",
+        "group": "detailSel",
+        "label": "CSS seçici 4",
+        "value": "meta[property='og:title']",
+        "default": "meta[property='og:title']",
+        "kind": "sel"
+      },
+      {
+        "key": "s_3ed296a9",
+        "group": "episodeSel",
+        "label": "Desen 1",
+        "value": "(\\d+)-bolum",
+        "default": "(\\d+)-bolum",
+        "kind": "regex"
       },
       {
         "key": "s_487e0f09",
         "group": "player",
         "label": "Desen 1",
         "value": "\"file\":\"((?:\\\\\\\\\\\"|[^\"])+)\",\"label\":\"((?:\\\\\\\\\\\"|[^\"])+)\"",
-        "default": "\"file\":\"((?:\\\\\\\\\\\"|[^\"])+)\",\"label\":\"((?:\\\\\\\\\\\"|[^\"])+)\""
+        "default": "\"file\":\"((?:\\\\\\\\\\\"|[^\"])+)\",\"label\":\"((?:\\\\\\\\\\\"|[^\"])+)\"",
+        "kind": "regex"
       },
       {
         "key": "s_822ee839",
         "group": "player",
         "label": "Desen 2",
         "value": "\"file\"\\s*:\\s*\"([^\"]+)\"",
-        "default": "\"file\"\\s*:\\s*\"([^\"]+)\""
+        "default": "\"file\"\\s*:\\s*\"([^\"]+)\"",
+        "kind": "regex"
+      },
+      {
+        "key": "s_e6ffd6ce",
+        "group": "player",
+        "label": "Yol 1",
+        "value": "/hd-film-izle",
+        "default": "/hd-film-izle",
+        "kind": "path"
+      },
+      {
+        "key": "s_3c45fd1f",
+        "group": "player",
+        "label": "Yol 2",
+        "value": "/source2.php?v=",
+        "default": "/source2.php?v=",
+        "kind": "path"
+      },
+      {
+        "key": "s_1f38f311",
+        "group": "player",
+        "label": "Yol 3",
+        "value": "/yabanci-dizi-izle",
+        "default": "/yabanci-dizi-izle",
+        "kind": "path"
       },
       {
         "key": "s_c33f421c",
         "group": "player",
         "label": "CSS seçici 1",
         "value": "img[src*='/poster/']",
-        "default": "img[src*='/poster/']"
+        "default": "img[src*='/poster/']",
+        "kind": "sel"
       },
       {
         "key": "s_8b15421e",
         "group": "player",
         "label": "CSS seçici 2",
         "value": "img[src*='/poster/'], img[data-src*='/poster/']",
-        "default": "img[src*='/poster/'], img[data-src*='/poster/']"
+        "default": "img[src*='/poster/'], img[data-src*='/poster/']",
+        "kind": "sel"
       },
       {
         "key": "s_6c29b9ef",
         "group": "player",
         "label": "Desen 3",
         "value": "window\\.openPlayer\\s*\\(\\s*['\"]([^'\"]+)['\"]",
-        "default": "window\\.openPlayer\\s*\\(\\s*['\"]([^'\"]+)['\"]"
+        "default": "window\\.openPlayer\\s*\\(\\s*['\"]([^'\"]+)['\"]",
+        "kind": "regex"
+      },
+      {
+        "key": "s_50b26149",
+        "group": "http",
+        "kind": "header",
+        "label": "HTTP başlığı 1",
+        "value": "Accept",
+        "default": "Accept"
+      },
+      {
+        "key": "s_66016716",
+        "group": "http",
+        "kind": "header",
+        "label": "HTTP başlığı 2",
+        "value": "Accept-Language",
+        "default": "Accept-Language"
       },
       {
         "key": "s_989000f1",
         "group": "http",
         "label": "User-Agent",
         "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "default": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        "default": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "kind": "ua"
       },
       {
         "key": "s_401adf67",
         "group": "http",
         "label": "User-Agent",
         "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Norton/124.0.0.0",
-        "default": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Norton/124.0.0.0"
+        "default": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Norton/124.0.0.0",
+        "kind": "ua"
+      },
+      {
+        "key": "s_1f93146f",
+        "group": "http",
+        "kind": "header",
+        "label": "HTTP başlığı 3",
+        "value": "Origin",
+        "default": "Origin"
+      },
+      {
+        "key": "s_1fbe3e06",
+        "group": "http",
+        "kind": "header",
+        "label": "HTTP başlığı 4",
+        "value": "Referer",
+        "default": "Referer"
+      },
+      {
+        "key": "s_e94087ee",
+        "group": "http",
+        "kind": "header",
+        "label": "HTTP başlığı 5",
+        "value": "User-Agent",
+        "default": "User-Agent"
+      },
+      {
+        "key": "s_9c044ff1",
+        "group": "http",
+        "kind": "header",
+        "label": "HTTP başlığı 6",
+        "value": "X-Requested-With",
+        "default": "X-Requested-With"
+      },
+      {
+        "key": "s_ec9af966",
+        "group": "http",
+        "kind": "header",
+        "label": "HTTP başlığı 7",
+        "value": "referer",
+        "default": "referer"
       },
       {
         "key": "s_9c6bcd33",
         "group": "other",
         "label": "Desen 1",
         "value": "\"ciphertext\"\\s*:\\s*\"([^\"]+)\"",
-        "default": "\"ciphertext\"\\s*:\\s*\"([^\"]+)\""
+        "default": "\"ciphertext\"\\s*:\\s*\"([^\"]+)\"",
+        "kind": "regex"
       },
       {
         "key": "s_47c051ce",
         "group": "other",
         "label": "Desen 2",
         "value": "\"iv\"\\s*:\\s*\"([^\"]+)\"",
-        "default": "\"iv\"\\s*:\\s*\"([^\"]+)\""
+        "default": "\"iv\"\\s*:\\s*\"([^\"]+)\"",
+        "kind": "regex"
       },
       {
         "key": "s_e916e0d3",
         "group": "other",
         "label": "Desen 3",
         "value": "\"salt\"\\s*:\\s*\"([^\"]+)\"",
-        "default": "\"salt\"\\s*:\\s*\"([^\"]+)\""
+        "default": "\"salt\"\\s*:\\s*\"([^\"]+)\"",
+        "kind": "regex"
       },
       {
         "key": "s_e5fe64af",
         "group": "other",
         "label": "Desen 4",
         "value": "(\\d+(?:[.,]\\d+)?)",
-        "default": "(\\d+(?:[.,]\\d+)?)"
+        "default": "(\\d+(?:[.,]\\d+)?)",
+        "kind": "regex"
       },
       {
         "key": "s_ade476ff",
         "group": "other",
         "label": "Desen 5",
         "value": "(\\d+)",
-        "default": "(\\d+)"
-      },
-      {
-        "key": "s_3ed296a9",
-        "group": "other",
-        "label": "Desen 6",
-        "value": "(\\d+)-bolum",
-        "default": "(\\d+)-bolum"
+        "default": "(\\d+)",
+        "kind": "regex"
       },
       {
         "key": "s_d3a09c05",
         "group": "other",
-        "label": "Desen 7",
+        "label": "Desen 6",
         "value": "(\\d+)-sezon",
-        "default": "(\\d+)-sezon"
+        "default": "(\\d+)-sezon",
+        "kind": "regex"
       },
       {
         "key": "s_804ae535",
         "group": "other",
-        "label": "Desen 8",
+        "label": "Desen 7",
         "value": "(\\d+)\\.\\s*Sezon",
-        "default": "(\\d+)\\.\\s*Sezon"
+        "default": "(\\d+)\\.\\s*Sezon",
+        "kind": "regex"
       },
       {
         "key": "s_aa358032",
         "group": "other",
-        "label": "Desen 9",
+        "label": "Desen 8",
         "value": "(\\d+)x\\d+",
-        "default": "(\\d+)x\\d+"
-      },
-      {
-        "key": "s_ca3f7526",
-        "group": "other",
-        "label": "Yol 1",
-        "value": "/anime",
-        "default": "/anime"
+        "default": "(\\d+)x\\d+",
+        "kind": "regex"
       },
       {
         "key": "s_41ff112a",
         "group": "other",
-        "label": "Yol 2",
+        "label": "Yol 1",
         "value": "/bg/getserielistbychannel",
-        "default": "/bg/getserielistbychannel"
-      },
-      {
-        "key": "s_5f25c9b9",
-        "group": "other",
-        "label": "Yol 3",
-        "value": "/dizi/",
-        "default": "/dizi/"
-      },
-      {
-        "key": "s_668b3e3d",
-        "group": "other",
-        "label": "Yol 4",
-        "value": "/film/",
-        "default": "/film/"
-      },
-      {
-        "key": "s_e6ffd6ce",
-        "group": "other",
-        "label": "Yol 5",
-        "value": "/hd-film-izle",
-        "default": "/hd-film-izle"
+        "default": "/bg/getserielistbychannel",
+        "kind": "path"
       },
       {
         "key": "s_0367f0ea",
         "group": "other",
-        "label": "Yol 6",
+        "label": "Yol 2",
         "value": "/kanal/",
-        "default": "/kanal/"
+        "default": "/kanal/",
+        "kind": "path"
       },
       {
         "key": "s_43473e6a",
         "group": "other",
-        "label": "Yol 7",
+        "label": "Yol 3",
         "value": "/kanal/amazon",
-        "default": "/kanal/amazon"
+        "default": "/kanal/amazon",
+        "kind": "path"
       },
       {
         "key": "s_e30253a2",
         "group": "other",
-        "label": "Yol 8",
+        "label": "Yol 4",
         "value": "/kanal/disney",
-        "default": "/kanal/disney"
+        "default": "/kanal/disney",
+        "kind": "path"
       },
       {
         "key": "s_345c634a",
         "group": "other",
-        "label": "Yol 9",
+        "label": "Yol 5",
         "value": "/kanal/exxen",
-        "default": "/kanal/exxen"
+        "default": "/kanal/exxen",
+        "kind": "path"
       },
       {
         "key": "s_4642545e",
         "group": "other",
-        "label": "Yol 10",
+        "label": "Yol 6",
         "value": "/kanal/hulu",
-        "default": "/kanal/hulu"
+        "default": "/kanal/hulu",
+        "kind": "path"
       },
       {
         "key": "s_3ad6befc",
         "group": "other",
-        "label": "Yol 11",
+        "label": "Yol 7",
         "value": "/kanal/max",
-        "default": "/kanal/max"
+        "default": "/kanal/max",
+        "kind": "path"
       },
       {
         "key": "s_b9413796",
         "group": "other",
-        "label": "Yol 12",
+        "label": "Yol 8",
         "value": "/kanal/netflix",
-        "default": "/kanal/netflix"
+        "default": "/kanal/netflix",
+        "kind": "path"
       },
       {
         "key": "s_617cae3b",
         "group": "other",
-        "label": "Yol 13",
+        "label": "Yol 9",
         "value": "/kanal/tabii",
-        "default": "/kanal/tabii"
+        "default": "/kanal/tabii",
+        "kind": "path"
       },
       {
         "key": "s_fce8a8b1",
         "group": "other",
-        "label": "Yol 14",
+        "label": "Yol 10",
         "value": "/kanal/tod",
-        "default": "/kanal/tod"
-      },
-      {
-        "key": "s_7e3f4103",
-        "group": "other",
-        "label": "Yol 15",
-        "value": "/kategori/",
-        "default": "/kategori/"
-      },
-      {
-        "key": "s_eb34f2b8",
-        "group": "other",
-        "label": "Yol 16",
-        "value": "/movies/",
-        "default": "/movies/"
-      },
-      {
-        "key": "s_63eabf18",
-        "group": "other",
-        "label": "Yol 17",
-        "value": "/series/",
-        "default": "/series/"
-      },
-      {
-        "key": "s_3c45fd1f",
-        "group": "other",
-        "label": "Yol 18",
-        "value": "/source2.php?v=",
-        "default": "/source2.php?v="
-      },
-      {
-        "key": "s_72947d22",
-        "group": "other",
-        "label": "Yol 19",
-        "value": "/tur/",
-        "default": "/tur/"
-      },
-      {
-        "key": "s_1f38f311",
-        "group": "other",
-        "label": "Yol 20",
-        "value": "/yabanci-dizi-izle",
-        "default": "/yabanci-dizi-izle"
+        "default": "/kanal/tod",
+        "kind": "path"
       },
       {
         "key": "s_1a0477ad",
         "group": "other",
-        "label": "Desen 10",
+        "label": "Desen 9",
         "value": "\\((\\d{4})\\)",
-        "default": "\\((\\d{4})\\)"
+        "default": "\\((\\d{4})\\)",
+        "kind": "regex"
       },
       {
         "key": "s_9390b8be",
         "group": "other",
-        "label": "Desen 11",
+        "label": "Desen 10",
         "value": "\\d+x(\\d+)",
-        "default": "\\d+x(\\d+)"
+        "default": "\\d+x(\\d+)",
+        "kind": "regex"
       },
       {
         "key": "s_de44cca2",
         "group": "other",
-        "label": "Desen 12",
+        "label": "Desen 11",
         "value": "^[\\d.,\\s/]+$",
-        "default": "^[\\d.,\\s/]+$"
+        "default": "^[\\d.,\\s/]+$",
+        "kind": "regex"
       },
       {
         "key": "s_56cffeee",
         "group": "other",
-        "label": "Desen 13",
+        "label": "Desen 12",
         "value": "channelId\\s*[:=]\\s*(\\d+)",
-        "default": "channelId\\s*[:=]\\s*(\\d+)"
+        "default": "channelId\\s*[:=]\\s*(\\d+)",
+        "kind": "regex"
       },
       {
         "key": "s_d75c86d5",
         "group": "other",
-        "label": "Desen 14",
+        "label": "Desen 13",
         "value": "https?://[^/]+",
-        "default": "https?://[^/]+"
+        "default": "https?://[^/]+",
+        "kind": "regex"
       },
       {
         "key": "s_ebf2daa3",
         "group": "other",
-        "label": "Desen 15",
+        "label": "Desen 14",
         "value": "url\\((['\"]?)(.*?)\\1\\)",
-        "default": "url\\((['\"]?)(.*?)\\1\\)"
+        "default": "url\\((['\"]?)(.*?)\\1\\)",
+        "kind": "regex"
+      }
+    ],
+    "domains": [
+      {
+        "id": "d_75b2eba4",
+        "label": "dizipal1584.com",
+        "value": "https://dizipal1584.com",
+        "default": "https://dizipal1584.com"
       }
     ]
   }
