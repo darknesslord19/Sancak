@@ -42,7 +42,7 @@
   {
     "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/DiziPal.cs3",
     "status": 1,
-    "version": 110,
+    "version": 111,
     "apiVersion": 1,
     "name": "DiziPal",
     "internalName": "DiziPal",
@@ -57,7 +57,7 @@
       "TvSeries"
     ],
     "iconUrl": null,
-    "fileSize": 74560
+    "fileSize": 74650
   },
   {
     "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/StreamCenter_Turkce.cs3",
