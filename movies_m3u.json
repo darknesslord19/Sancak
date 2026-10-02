@@ -1,11 +1,11 @@
 [
   {
-    "name": "Darknes-Ulusal-TV",
+    "name": "Darknes-Ulusal-Kanalları",
     "desc": "Ücretsiz açık kaynak ulusal ve yerel TV yayınları (IPTV-org)",
     "url": "https://iptv-org.github.io/iptv/countries/tr.m3u"
   },
   {
-    "name": "Darknes-Haber+Kanalları",
+    "name": "Darknes-Haber-Kanalları",
     "desc": "Uluslararası canlı haber ve bilgi kanalları",
     "url": "https://iptv-org.github.io/iptv/categories/news.m3u"
   },
@@ -20,7 +20,7 @@
     "url": "https://iptv-org.github.io/iptv/categories/documentary.m3u"
   },
   {
-    "name": "Darknes-Filmler",
+    "name": "Darknes-Film-Kanalları",
     "desc": "Yerel yabanci filmler",
     "url": "https://raw.githubusercontent.com/darkneslord19/Movies/main/filmler_full.m3u"
   }
