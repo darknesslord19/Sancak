@@ -15,7 +15,7 @@ public class DomainStore {
     static final String TOKEN = "";
     static final String ABOUT = "";
     static final String UPDATE = "https://raw.githubusercontent.com/darknesslord19/Sancak/main/update.json";
-    static final String PLUGIN = "Anizm";
+    static final String PLUGIN = "DiziPal";
     static String cur = "";
     static String curName = "";
     static String lastEff = "";
