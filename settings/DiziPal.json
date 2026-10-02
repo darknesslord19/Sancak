@@ -12,6 +12,34 @@
   "value": "?sayfa="
  },
  {
+  "key": "s_ca3f7526",
+  "value": "/anime"
+ },
+ {
+  "key": "s_5f25c9b9",
+  "value": "/dizi/"
+ },
+ {
+  "key": "s_668b3e3d",
+  "value": "/film/"
+ },
+ {
+  "key": "s_eb34f2b8",
+  "value": "/movies/"
+ },
+ {
+  "key": "s_63eabf18",
+  "value": "/series/"
+ },
+ {
+  "key": "s_7e3f4103",
+  "value": "/kategori/"
+ },
+ {
+  "key": "s_72947d22",
+  "value": "/tur/"
+ },
+ {
   "key": "s_0775119b",
   "value": "[style*='background-image']"
  },
@@ -56,10 +84,6 @@
   "value": "meta[property='og:image']"
  },
  {
-  "key": "s_072af362",
-  "value": "meta[property='og:title']"
- },
- {
   "key": "s_2416e6b1",
   "value": ".imdb, .rating, .dp-rating, span[class*='imdb'], div[class*='imdb']"
  },
@@ -72,12 +96,32 @@
   "value": "meta[name='description']"
  },
  {
+  "key": "s_072af362",
+  "value": "meta[property='og:title']"
+ },
+ {
+  "key": "s_3ed296a9",
+  "value": "(\\d+)-bolum"
+ },
+ {
   "key": "s_487e0f09",
   "value": "\"file\":\"((?:\\\\\\\\\\\"|[^\"])+)\",\"label\":\"((?:\\\\\\\\\\\"|[^\"])+)\""
  },
  {
   "key": "s_822ee839",
   "value": "\"file\"\\s*:\\s*\"([^\"]+)\""
+ },
+ {
+  "key": "s_e6ffd6ce",
+  "value": "/hd-film-izle"
+ },
+ {
+  "key": "s_3c45fd1f",
+  "value": "/source2.php?v="
+ },
+ {
+  "key": "s_1f38f311",
+  "value": "/yabanci-dizi-izle"
  },
  {
   "key": "s_c33f421c",
@@ -92,12 +136,40 @@
   "value": "window\\.openPlayer\\s*\\(\\s*['\"]([^'\"]+)['\"]"
  },
  {
+  "key": "s_50b26149",
+  "value": "Accept"
+ },
+ {
+  "key": "s_66016716",
+  "value": "Accept-Language"
+ },
+ {
   "key": "s_989000f1",
   "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
  },
  {
   "key": "s_401adf67",
   "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Norton/124.0.0.0"
+ },
+ {
+  "key": "s_1f93146f",
+  "value": "Origin"
+ },
+ {
+  "key": "s_1fbe3e06",
+  "value": "Referer"
+ },
+ {
+  "key": "s_e94087ee",
+  "value": "User-Agent"
+ },
+ {
+  "key": "s_9c044ff1",
+  "value": "X-Requested-With"
+ },
+ {
+  "key": "s_ec9af966",
+  "value": "referer"
  },
  {
   "key": "s_9c6bcd33",
@@ -120,10 +192,6 @@
   "value": "(\\d+)"
  },
  {
-  "key": "s_3ed296a9",
-  "value": "(\\d+)-bolum"
- },
- {
   "key": "s_d3a09c05",
   "value": "(\\d+)-sezon"
  },
@@ -136,24 +204,8 @@
   "value": "(\\d+)x\\d+"
  },
  {
-  "key": "s_ca3f7526",
-  "value": "/anime"
- },
- {
   "key": "s_41ff112a",
   "value": "/bg/getserielistbychannel"
- },
- {
-  "key": "s_5f25c9b9",
-  "value": "/dizi/"
- },
- {
-  "key": "s_668b3e3d",
-  "value": "/film/"
- },
- {
-  "key": "s_e6ffd6ce",
-  "value": "/hd-film-izle"
  },
  {
   "key": "s_0367f0ea",
@@ -190,30 +242,6 @@
  {
   "key": "s_fce8a8b1",
   "value": "/kanal/tod"
- },
- {
-  "key": "s_7e3f4103",
-  "value": "/kategori/"
- },
- {
-  "key": "s_eb34f2b8",
-  "value": "/movies/"
- },
- {
-  "key": "s_63eabf18",
-  "value": "/series/"
- },
- {
-  "key": "s_3c45fd1f",
-  "value": "/source2.php?v="
- },
- {
-  "key": "s_72947d22",
-  "value": "/tur/"
- },
- {
-  "key": "s_1f38f311",
-  "value": "/yabanci-dizi-izle"
  },
  {
   "key": "s_1a0477ad",
