@@ -1,0 +1,242 @@
+[
+ {
+  "key": "s_052bf2f3",
+  "value": "/bg/searchcontent"
+ },
+ {
+  "key": "s_ce2713e0",
+  "value": "&sayfa="
+ },
+ {
+  "key": "s_e71d43d3",
+  "value": "?sayfa="
+ },
+ {
+  "key": "s_0775119b",
+  "value": "[style*='background-image']"
+ },
+ {
+  "key": "s_09ee89d7",
+  "value": "a[data-dizipal-pageloader], a[href]"
+ },
+ {
+  "key": "s_2f4ca78e",
+  "value": "a[href*='/tur/'], a[href*='/kategori/']"
+ },
+ {
+  "key": "s_9205578f",
+  "value": "a[href]"
+ },
+ {
+  "key": "s_ede7a4ae",
+  "value": "div.flex h2, h1"
+ },
+ {
+  "key": "s_6e008193",
+  "value": "div.page-top img[alt]"
+ },
+ {
+  "key": "s_39e12601",
+  "value": "div.text-white.text-sm.opacity-80"
+ },
+ {
+  "key": "s_ea88f253",
+  "value": "div[data-rm-k=true]"
+ },
+ {
+  "key": "s_3af98ff9",
+  "value": "h2, small, strong"
+ },
+ {
+  "key": "s_d705f69f",
+  "value": "input[name=channelId]"
+ },
+ {
+  "key": "s_6fd2a071",
+  "value": "meta[property='og:image']"
+ },
+ {
+  "key": "s_072af362",
+  "value": "meta[property='og:title']"
+ },
+ {
+  "key": "s_2416e6b1",
+  "value": ".imdb, .rating, .dp-rating, span[class*='imdb'], div[class*='imdb']"
+ },
+ {
+  "key": "s_a85997ef",
+  "value": "div.summary p, meta[name='description']"
+ },
+ {
+  "key": "s_6e294a98",
+  "value": "meta[name='description']"
+ },
+ {
+  "key": "s_487e0f09",
+  "value": "\"file\":\"((?:\\\\\\\\\\\"|[^\"])+)\",\"label\":\"((?:\\\\\\\\\\\"|[^\"])+)\""
+ },
+ {
+  "key": "s_822ee839",
+  "value": "\"file\"\\s*:\\s*\"([^\"]+)\""
+ },
+ {
+  "key": "s_c33f421c",
+  "value": "img[src*='/poster/']"
+ },
+ {
+  "key": "s_8b15421e",
+  "value": "img[src*='/poster/'], img[data-src*='/poster/']"
+ },
+ {
+  "key": "s_6c29b9ef",
+  "value": "window\\.openPlayer\\s*\\(\\s*['\"]([^'\"]+)['\"]"
+ },
+ {
+  "key": "s_989000f1",
+  "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+ },
+ {
+  "key": "s_401adf67",
+  "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Norton/124.0.0.0"
+ },
+ {
+  "key": "s_9c6bcd33",
+  "value": "\"ciphertext\"\\s*:\\s*\"([^\"]+)\""
+ },
+ {
+  "key": "s_47c051ce",
+  "value": "\"iv\"\\s*:\\s*\"([^\"]+)\""
+ },
+ {
+  "key": "s_e916e0d3",
+  "value": "\"salt\"\\s*:\\s*\"([^\"]+)\""
+ },
+ {
+  "key": "s_e5fe64af",
+  "value": "(\\d+(?:[.,]\\d+)?)"
+ },
+ {
+  "key": "s_ade476ff",
+  "value": "(\\d+)"
+ },
+ {
+  "key": "s_3ed296a9",
+  "value": "(\\d+)-bolum"
+ },
+ {
+  "key": "s_d3a09c05",
+  "value": "(\\d+)-sezon"
+ },
+ {
+  "key": "s_804ae535",
+  "value": "(\\d+)\\.\\s*Sezon"
+ },
+ {
+  "key": "s_aa358032",
+  "value": "(\\d+)x\\d+"
+ },
+ {
+  "key": "s_ca3f7526",
+  "value": "/anime"
+ },
+ {
+  "key": "s_41ff112a",
+  "value": "/bg/getserielistbychannel"
+ },
+ {
+  "key": "s_5f25c9b9",
+  "value": "/dizi/"
+ },
+ {
+  "key": "s_668b3e3d",
+  "value": "/film/"
+ },
+ {
+  "key": "s_e6ffd6ce",
+  "value": "/hd-film-izle"
+ },
+ {
+  "key": "s_0367f0ea",
+  "value": "/kanal/"
+ },
+ {
+  "key": "s_43473e6a",
+  "value": "/kanal/amazon"
+ },
+ {
+  "key": "s_e30253a2",
+  "value": "/kanal/disney"
+ },
+ {
+  "key": "s_345c634a",
+  "value": "/kanal/exxen"
+ },
+ {
+  "key": "s_4642545e",
+  "value": "/kanal/hulu"
+ },
+ {
+  "key": "s_3ad6befc",
+  "value": "/kanal/max"
+ },
+ {
+  "key": "s_b9413796",
+  "value": "/kanal/netflix"
+ },
+ {
+  "key": "s_617cae3b",
+  "value": "/kanal/tabii"
+ },
+ {
+  "key": "s_fce8a8b1",
+  "value": "/kanal/tod"
+ },
+ {
+  "key": "s_7e3f4103",
+  "value": "/kategori/"
+ },
+ {
+  "key": "s_eb34f2b8",
+  "value": "/movies/"
+ },
+ {
+  "key": "s_63eabf18",
+  "value": "/series/"
+ },
+ {
+  "key": "s_3c45fd1f",
+  "value": "/source2.php?v="
+ },
+ {
+  "key": "s_72947d22",
+  "value": "/tur/"
+ },
+ {
+  "key": "s_1f38f311",
+  "value": "/yabanci-dizi-izle"
+ },
+ {
+  "key": "s_1a0477ad",
+  "value": "\\((\\d{4})\\)"
+ },
+ {
+  "key": "s_9390b8be",
+  "value": "\\d+x(\\d+)"
+ },
+ {
+  "key": "s_de44cca2",
+  "value": "^[\\d.,\\s/]+$"
+ },
+ {
+  "key": "s_56cffeee",
+  "value": "channelId\\s*[:=]\\s*(\\d+)"
+ },
+ {
+  "key": "s_d75c86d5",
+  "value": "https?://[^/]+"
+ },
+ {
+  "key": "s_ebf2daa3",
+  "value": "url\\((['\"]?)(.*?)\\1\\)"
+ }
+]
