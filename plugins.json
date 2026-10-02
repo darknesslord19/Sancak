@@ -60,6 +60,26 @@
     "fileSize": 77098
   },
   {
+    "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/plt-tv.cs3",
+    "status": 1,
+    "version": 5,
+    "apiVersion": 1,
+    "name": "plt-tv",
+    "internalName": "plt-tv",
+    "authors": [
+      "darknesslord19"
+    ],
+    "description": "",
+    "repositoryUrl": "https://github.com/darknesslord19/Sancak",
+    "language": "tr",
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "iconUrl": null,
+    "fileSize": 46327
+  },
+  {
     "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/StreamCenter_Turkce.cs3",
     "status": 1,
     "version": 10,
