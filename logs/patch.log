@@ -1,13 +1,4 @@
-== Anizm.cs3 | domain: http://anizm.net http://anizm.tv http://www.anizm.net http://www.anizm.tv https://anizm.com.tr https://anizm.net https://anizm.tv https://anizmplayer.com https://www.anizm.net https://www.anizm.tv
-  http://anizm.net -> ad: Anizm:anizm.net (1 yer)
-  http://anizm.tv -> ad: Anizm:anizm.tv (1 yer)
-  http://www.anizm.net -> ad: Anizm:anizm.net (1 yer)
-  http://www.anizm.tv -> ad: Anizm:anizm.tv (1 yer)
-  https://anizm.com.tr -> ad: Anizm:anizm.com.tr (1 yer)
-  https://anizm.net -> ad: Anizm:anizm.net (1 yer)
-  https://anizm.tv -> ad: Anizm:anizm.tv (1 yer)
-  https://anizmplayer.com -> ad: Anizm:anizmplayer.com (1 yer)
-  https://www.anizm.net -> ad: Anizm:anizm.net (1 yer)
-  https://www.anizm.tv -> ad: Anizm:anizm.tv (1 yer)
-AYAR: 64 yerde, 62 anahtar ayarlanabilir yapildi
-TAMAM: 10 yerde, 10 domain yerlestirildi (ad: Anizm), popup hook eklendi -> builds/Anizm.cs3
+== DiziPal.cs3 | domain: https://dizipal1584.com
+  https://dizipal1584.com -> ad: DiziPal (1 yer)
+AYAR: 70 yerde, 60 anahtar ayarlanabilir yapildi
+TAMAM: 1 yerde, 1 domain yerlestirildi (ad: DiziPal), popup hook eklendi -> builds/DiziPal.cs3
