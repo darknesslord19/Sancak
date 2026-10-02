@@ -1,6 +1,6 @@
 [
   {
-    "name": "Dürkiye - Ulusal ve Yerel TV",
+    "name": "Türkiye - Ulusal ve Yerel TV",
     "desc": "Ücretsiz açık kaynak ulusal ve yerel TV yayınları (IPTV-org)",
     "url": "https://iptv-org.github.io/iptv/countries/tr.m3u"
   },
@@ -18,5 +18,10 @@
     "name": "Dünya - Belgesel Kanalları",
     "desc": "Doğa, bilim ve belgesel yayınları",
     "url": "https://iptv-org.github.io/iptv/categories/documentary.m3u"
+  }
+  {
+    "name": "Darknes-Filmler",
+    "desc": "Yerel yabanci filmler",
+    "url": "https://mth.tc/recfilm"
   }
 ]
