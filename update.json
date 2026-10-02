@@ -441,7 +441,7 @@
     ]
   },
   "DiziPal": {
-    "version": 2,
+    "version": 3,
     "sections": [
       {
         "name": "Anime",
@@ -477,6 +477,86 @@
       {
         "name": "Tur",
         "path": "/tur/"
+      },
+      {
+        "name": "Getserielistbychannel",
+        "path": "/bg/getserielistbychannel",
+        "enabled": true
+      },
+      {
+        "name": "Kanal",
+        "path": "/kanal/",
+        "enabled": true
+      },
+      {
+        "name": "Amazon",
+        "path": "/kanal/amazon",
+        "enabled": true
+      },
+      {
+        "name": "Disney",
+        "path": "/kanal/disney",
+        "enabled": true
+      },
+      {
+        "name": "Exxen",
+        "path": "/kanal/exxen",
+        "enabled": true
+      },
+      {
+        "name": "Hulu",
+        "path": "/kanal/hulu",
+        "enabled": true
+      },
+      {
+        "name": "Max",
+        "path": "/kanal/max",
+        "enabled": true
+      },
+      {
+        "name": "Netflix",
+        "path": "/kanal/netflix",
+        "enabled": true
+      },
+      {
+        "name": "Tabii",
+        "path": "/kanal/tabii",
+        "enabled": true
+      },
+      {
+        "name": "Tod",
+        "path": "/kanal/tod",
+        "enabled": true
+      },
+      {
+        "name": "Anime",
+        "path": "Anime",
+        "enabled": true
+      },
+      {
+        "name": "Genres",
+        "path": "genres",
+        "enabled": true
+      },
+      {
+        "name": "Tags",
+        "path": "tags",
+        "enabled": true
+      },
+      {
+        "name": "Anime",
+        "path": "/anime/",
+        "enabled": true
+      },
+      {
+        "name": "genres",
+        "path": "/genres/",
+        "enabled": true
+      },
+      {
+        "name": "tags",
+        "path": "/tags/",
+        "enabled": true
       }
     ],
     "options": [
@@ -545,9 +625,89 @@
         "kind": "path"
       },
       {
-        "key": "s_7e3f4103",
+        "key": "s_41ff112a",
         "group": "category",
         "label": "Yol 1",
+        "value": "/bg/getserielistbychannel",
+        "default": "/bg/getserielistbychannel",
+        "kind": "path"
+      },
+      {
+        "key": "s_0367f0ea",
+        "group": "category",
+        "label": "Yol 2",
+        "value": "/kanal/",
+        "default": "/kanal/",
+        "kind": "path"
+      },
+      {
+        "key": "s_43473e6a",
+        "group": "category",
+        "label": "Yol 3",
+        "value": "/kanal/amazon",
+        "default": "/kanal/amazon",
+        "kind": "path"
+      },
+      {
+        "key": "s_e30253a2",
+        "group": "category",
+        "label": "Yol 4",
+        "value": "/kanal/disney",
+        "default": "/kanal/disney",
+        "kind": "path"
+      },
+      {
+        "key": "s_345c634a",
+        "group": "category",
+        "label": "Yol 5",
+        "value": "/kanal/exxen",
+        "default": "/kanal/exxen",
+        "kind": "path"
+      },
+      {
+        "key": "s_4642545e",
+        "group": "category",
+        "label": "Yol 6",
+        "value": "/kanal/hulu",
+        "default": "/kanal/hulu",
+        "kind": "path"
+      },
+      {
+        "key": "s_3ad6befc",
+        "group": "category",
+        "label": "Yol 7",
+        "value": "/kanal/max",
+        "default": "/kanal/max",
+        "kind": "path"
+      },
+      {
+        "key": "s_b9413796",
+        "group": "category",
+        "label": "Yol 8",
+        "value": "/kanal/netflix",
+        "default": "/kanal/netflix",
+        "kind": "path"
+      },
+      {
+        "key": "s_617cae3b",
+        "group": "category",
+        "label": "Yol 9",
+        "value": "/kanal/tabii",
+        "default": "/kanal/tabii",
+        "kind": "path"
+      },
+      {
+        "key": "s_fce8a8b1",
+        "group": "category",
+        "label": "Yol 10",
+        "value": "/kanal/tod",
+        "default": "/kanal/tod",
+        "kind": "path"
+      },
+      {
+        "key": "s_7e3f4103",
+        "group": "category",
+        "label": "Yol 11",
         "value": "/kategori/",
         "default": "/kategori/",
         "kind": "path"
@@ -555,10 +715,37 @@
       {
         "key": "s_72947d22",
         "group": "category",
-        "label": "Yol 2",
+        "label": "Yol 12",
         "value": "/tur/",
         "default": "/tur/",
         "kind": "path"
+      },
+      {
+        "key": "s_3e234f0f",
+        "group": "category",
+        "kind": "label",
+        "label": "Kategori adı 1",
+        "value": "Anime",
+        "default": "Anime",
+        "enabled": true
+      },
+      {
+        "key": "s_1fc394c9",
+        "group": "category",
+        "kind": "label",
+        "label": "Kategori adı 2",
+        "value": "genres",
+        "default": "genres",
+        "enabled": true
+      },
+      {
+        "key": "s_f416eba0",
+        "group": "category",
+        "kind": "label",
+        "label": "Kategori adı 3",
+        "value": "tags",
+        "default": "tags",
+        "enabled": true
       },
       {
         "key": "s_0775119b",
@@ -887,86 +1074,6 @@
         "value": "(\\d+)x\\d+",
         "default": "(\\d+)x\\d+",
         "kind": "regex"
-      },
-      {
-        "key": "s_41ff112a",
-        "group": "other",
-        "label": "Yol 1",
-        "value": "/bg/getserielistbychannel",
-        "default": "/bg/getserielistbychannel",
-        "kind": "path"
-      },
-      {
-        "key": "s_0367f0ea",
-        "group": "other",
-        "label": "Yol 2",
-        "value": "/kanal/",
-        "default": "/kanal/",
-        "kind": "path"
-      },
-      {
-        "key": "s_43473e6a",
-        "group": "other",
-        "label": "Yol 3",
-        "value": "/kanal/amazon",
-        "default": "/kanal/amazon",
-        "kind": "path"
-      },
-      {
-        "key": "s_e30253a2",
-        "group": "other",
-        "label": "Yol 4",
-        "value": "/kanal/disney",
-        "default": "/kanal/disney",
-        "kind": "path"
-      },
-      {
-        "key": "s_345c634a",
-        "group": "other",
-        "label": "Yol 5",
-        "value": "/kanal/exxen",
-        "default": "/kanal/exxen",
-        "kind": "path"
-      },
-      {
-        "key": "s_4642545e",
-        "group": "other",
-        "label": "Yol 6",
-        "value": "/kanal/hulu",
-        "default": "/kanal/hulu",
-        "kind": "path"
-      },
-      {
-        "key": "s_3ad6befc",
-        "group": "other",
-        "label": "Yol 7",
-        "value": "/kanal/max",
-        "default": "/kanal/max",
-        "kind": "path"
-      },
-      {
-        "key": "s_b9413796",
-        "group": "other",
-        "label": "Yol 8",
-        "value": "/kanal/netflix",
-        "default": "/kanal/netflix",
-        "kind": "path"
-      },
-      {
-        "key": "s_617cae3b",
-        "group": "other",
-        "label": "Yol 9",
-        "value": "/kanal/tabii",
-        "default": "/kanal/tabii",
-        "kind": "path"
-      },
-      {
-        "key": "s_fce8a8b1",
-        "group": "other",
-        "label": "Yol 10",
-        "value": "/kanal/tod",
-        "default": "/kanal/tod",
-        "kind": "path"
       },
       {
         "key": "s_1a0477ad",
