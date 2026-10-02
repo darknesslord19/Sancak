@@ -83,6 +83,8 @@ jobs:
             fi
             args=()
             for d in $old; do args+=(--domain "$d"); done
+            stem="${name%.cs3}"
+            if [ -f "settings/$stem.json" ]; then args+=(--settings "settings/$stem.json"); fi
             if ! python patch_cs3.py "$f" "${args[@]}" -o "builds/$name" 2>&1 | tee -a logs/patch.log; then
               fail=1
             fi
