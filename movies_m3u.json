@@ -1,16 +1,16 @@
 [
   {
-    "name": "Türkiye - Ulusal ve Yerel TV",
+    "name": "Darknes-Ulusal-TV",
     "desc": "Ücretsiz açık kaynak ulusal ve yerel TV yayınları (IPTV-org)",
     "url": "https://iptv-org.github.io/iptv/countries/tr.m3u"
   },
   {
-    "name": "Dünya - Haber Kanalları",
+    "name": "Darknes-Haber+Kanalları",
     "desc": "Uluslararası canlı haber ve bilgi kanalları",
     "url": "https://iptv-org.github.io/iptv/categories/news.m3u"
   },
   {
-    "name": "Dünya - Müzik Kanalları",
+    "name": "Darknes-Müzik-Kanalları",
     "desc": "Popüler müzik ve radyo yayınları",
     "url": "https://iptv-org.github.io/iptv/categories/music.m3u"
   },
