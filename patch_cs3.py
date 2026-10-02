@@ -13,6 +13,7 @@ Kullanim:
   python patch_cs3.py Provider.cs3 --domain https://eski.com -o Provider.patched.cs3
 """
 import argparse
+import json
 import re
 import shutil
 import subprocess
@@ -26,6 +27,7 @@ PKG = "Lcom/example/domainpatch"
 READ_SIG = PKG + "/DomainStore;->read(Ljava/lang/String;)Ljava/lang/String;"
 INIT_SIG = PKG + "/Hook;->init(Ljava/lang/Object;Landroid/content/Context;)V"
 INIT0_SIG = PKG + "/Hook;->init(Ljava/lang/Object;)V"
+SETTING_SIG = PKG + "/DomainStore;->setting(Ljava/lang/String;)Ljava/lang/String;"
 API = "33"
 
 CONST_RE = re.compile(r'^(\s*)(const-string(?:/jumbo)?)\s+([vp]\d+),\s+"(https?://[^"]*)"\s*$')
@@ -77,6 +79,51 @@ def print_candidates(seen):
         return
     for url in sorted(seen):
         print("  " + url + "   <- " + ", ".join(sorted(seen[url]))[:80])
+
+
+CONST_ANY_RE = re.compile(r'^(\s*)(const-string(?:/jumbo)?)\s+([vp]\d+),\s+"((?:[^"\\]|\\.)*)"\s*$')
+ESC = {"n": "\n", "t": "\t", "r": "\r", "b": "\b", "f": "\f", '"': '"', "'": "'", "\\": "\\", "0": "\0"}
+
+
+def unescape_smali(s):
+    out, i = [], 0
+    while i < len(s):
+        c = s[i]
+        if c == "\\" and i + 1 < len(s):
+            n = s[i + 1]
+            if n == "u" and re.fullmatch(r"[0-9a-fA-F]{4}", s[i + 2:i + 6]):
+                out.append(chr(int(s[i + 2:i + 6], 16)))
+                i += 6
+                continue
+            out.append(ESC.get(n, n))
+            i += 2
+            continue
+        out.append(c)
+        i += 1
+    return "".join(out)
+
+
+def patch_settings(sm, mapping):
+    """mapping: {orijinal metin: anahtar}. Eslesen her const-string, DomainStore.setting(orijinal@@@anahtar) sonucuna cevrilir."""
+    count = 0
+    for f in sm.rglob("*.smali"):
+        out, hit = [], False
+        for line in rd(f).split("\n"):
+            m = CONST_ANY_RE.match(line)
+            if m and "@@" not in m.group(4):
+                key = mapping.get(unescape_smali(m.group(4)))
+                if key:
+                    ind, op, reg, lit = m.group(1), m.group(2), m.group(3), m.group(4)
+                    out.append(ind + op + " " + reg + ', "' + lit + "@@@" + key + '"')
+                    out.append(ind + "invoke-static/range {" + reg + " .. " + reg + "}, " + SETTING_SIG)
+                    out.append(ind + "move-result-object " + reg)
+                    hit = True
+                    count += 1
+                    continue
+            out.append(line)
+        if hit:
+            wr(f, "\n".join(out))
+    return count
 
 
 def host_of(d):
@@ -201,6 +248,7 @@ def main():
     ap.add_argument("cs3")
     ap.add_argument("--domain", action="append", help="CS3 icinde yazili ESKI domain (birden cok kez verilebilir)")
     ap.add_argument("--name", help="Eklenti adi (varsayilan: dosya adi)")
+    ap.add_argument("--settings", help="Ayarlanabilir sabitler: [{\"key\":..,\"value\":..}] JSON dosyasi")
     ap.add_argument("--list", action="store_true", help="bulunan URL'leri listele")
     ap.add_argument("--helper", default="helper.dex")
     ap.add_argument("--tools", default="tools")
@@ -244,6 +292,19 @@ def main():
             sys.exit("HATA: Domain string'i bulunamadi. Yukaridaki listeden birebir yaz.")
         if missing:
             print("UYARI: bulunamayan domain(ler): " + ", ".join(missing))
+
+        if a.settings:
+            try:
+                mapping = {x["value"]: x["key"] for x in json.loads(Path(a.settings).read_text(encoding="utf-8"))}
+            except Exception as e:
+                sys.exit("HATA: --settings dosyasi okunamadi: " + str(e))
+            nset = 0
+            for d, sm in parts:
+                n = patch_settings(sm, mapping)
+                if n:
+                    nset += n
+                    changed.add(d)
+            print("AYAR: %d yerde, %d anahtar ayarlanabilir yapildi" % (nset, len(mapping)))
 
         hooked = False
         for d, sm in parts:
