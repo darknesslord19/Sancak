@@ -23,5 +23,10 @@
     "name": "Darknes-Film-Tv",
     "desc": "Yerel yabanci filmler",
     "url": "https://raw.githubusercontent.com/darkneslord19/Movies/main/filmler_full.m3u"
+  },
+  {
+    "name": "Darknes-Sinema-Tv",
+    "desc": "Sinema Salonu",
+    "url": "https://tinyurl.com/24lt9aqs"
   }
 ]
