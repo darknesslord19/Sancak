@@ -32,12 +32,64 @@
   "value": "/series/"
  },
  {
+  "key": "s_41ff112a",
+  "value": "/bg/getserielistbychannel"
+ },
+ {
+  "key": "s_0367f0ea",
+  "value": "/kanal/"
+ },
+ {
+  "key": "s_43473e6a",
+  "value": "/kanal/amazon"
+ },
+ {
+  "key": "s_e30253a2",
+  "value": "/kanal/disney"
+ },
+ {
+  "key": "s_345c634a",
+  "value": "/kanal/exxen"
+ },
+ {
+  "key": "s_4642545e",
+  "value": "/kanal/hulu"
+ },
+ {
+  "key": "s_3ad6befc",
+  "value": "/kanal/max"
+ },
+ {
+  "key": "s_b9413796",
+  "value": "/kanal/netflix"
+ },
+ {
+  "key": "s_617cae3b",
+  "value": "/kanal/tabii"
+ },
+ {
+  "key": "s_fce8a8b1",
+  "value": "/kanal/tod"
+ },
+ {
   "key": "s_7e3f4103",
   "value": "/kategori/"
  },
  {
   "key": "s_72947d22",
   "value": "/tur/"
+ },
+ {
+  "key": "s_3e234f0f",
+  "value": "Anime"
+ },
+ {
+  "key": "s_1fc394c9",
+  "value": "genres"
+ },
+ {
+  "key": "s_f416eba0",
+  "value": "tags"
  },
  {
   "key": "s_0775119b",
@@ -202,46 +254,6 @@
  {
   "key": "s_aa358032",
   "value": "(\\d+)x\\d+"
- },
- {
-  "key": "s_41ff112a",
-  "value": "/bg/getserielistbychannel"
- },
- {
-  "key": "s_0367f0ea",
-  "value": "/kanal/"
- },
- {
-  "key": "s_43473e6a",
-  "value": "/kanal/amazon"
- },
- {
-  "key": "s_e30253a2",
-  "value": "/kanal/disney"
- },
- {
-  "key": "s_345c634a",
-  "value": "/kanal/exxen"
- },
- {
-  "key": "s_4642545e",
-  "value": "/kanal/hulu"
- },
- {
-  "key": "s_3ad6befc",
-  "value": "/kanal/max"
- },
- {
-  "key": "s_b9413796",
-  "value": "/kanal/netflix"
- },
- {
-  "key": "s_617cae3b",
-  "value": "/kanal/tabii"
- },
- {
-  "key": "s_fce8a8b1",
-  "value": "/kanal/tod"
  },
  {
   "key": "s_1a0477ad",
