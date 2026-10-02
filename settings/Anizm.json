@@ -1,0 +1,250 @@
+[
+ {
+  "key": "s_be0fc7ea",
+  "value": "/fullViewSearch"
+ },
+ {
+  "key": "s_38f97ac6",
+  "value": "/fullViewSearch?search="
+ },
+ {
+  "key": "s_d1177eec",
+  "value": "/searchAnime?query="
+ },
+ {
+  "key": "s_efc7d11c",
+  "value": "&page=1"
+ },
+ {
+  "key": "s_e5341a98",
+  "value": "?page="
+ },
+ {
+  "key": "s_a1116f24",
+  "value": ".css"
+ },
+ {
+  "key": "s_528bd155",
+  "value": ".gif"
+ },
+ {
+  "key": "s_f90fad8f",
+  "value": ".jpeg"
+ },
+ {
+  "key": "s_52bc0ecc",
+  "value": ".jpg"
+ },
+ {
+  "key": "s_4d1b2776",
+  "value": ".js"
+ },
+ {
+  "key": "s_433f52e0",
+  "value": ".png"
+ },
+ {
+  "key": "s_cf871d35",
+  "value": ".svg"
+ },
+ {
+  "key": "s_4cb8f0df",
+  "value": ".webp"
+ },
+ {
+  "key": "s_9205578f",
+  "value": "a[href]"
+ },
+ {
+  "key": "s_64c1a726",
+  "value": "a[translator]"
+ },
+ {
+  "key": "s_9bc16f18",
+  "value": "div.title, h5.animeTitle a, .title, h5, h4, h3"
+ },
+ {
+  "key": "s_a8a1a968",
+  "value": "div.title, span"
+ },
+ {
+  "key": "s_44b05863",
+  "value": "h2.anizm_pageTitle a, h2.anizm_pageTitle, h1.anizm_pageTitle, h1"
+ },
+ {
+  "key": "s_072af362",
+  "value": "meta[property='og:title']"
+ },
+ {
+  "key": "s_7225e622",
+  "value": "span.dataValue"
+ },
+ {
+  "key": "s_fc347dc7",
+  "value": "span.dataValue > span.tag > span.label, span.dataValue span.ui.label"
+ },
+ {
+  "key": "s_e4106ea0",
+  "value": "[data-imdb-id]"
+ },
+ {
+  "key": "s_e353c590",
+  "value": "[data-imdb]"
+ },
+ {
+  "key": "s_4a5d11b1",
+  "value": "a[href*='imdb.com/title/']"
+ },
+ {
+  "key": "s_edde11cb",
+  "value": "div.infoDesc"
+ },
+ {
+  "key": "s_6a54d2cf",
+  "value": "div.infoPosterImg > img, div.infoPosterImg img"
+ },
+ {
+  "key": "s_f695a84f",
+  "value": "div.infoSta li, div.anizm_boxContent li.dataRow"
+ },
+ {
+  "key": "s_ab2bae47",
+  "value": "div.searchResultItem, div.posterBlock"
+ },
+ {
+  "key": "s_62ac4b70",
+  "value": "div.episodeBlock"
+ },
+ {
+  "key": "s_21ae4b36",
+  "value": "div.truncateText, div.episodeBlock"
+ },
+ {
+  "key": "s_d480f118",
+  "value": ".m3u8"
+ },
+ {
+  "key": "s_1c53eb08",
+  "value": ".mp4"
+ },
+ {
+  "key": "s_1e4225b3",
+  "value": "a[video]"
+ },
+ {
+  "key": "s_e2d6ad75",
+  "value": "file:\\s*[\\\"']([^\\\"']+)[\\\"']"
+ },
+ {
+  "key": "s_d2e77495",
+  "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+ },
+ {
+  "key": "s_83eeada8",
+  "value": "&do=getVideo"
+ },
+ {
+  "key": "s_c7862663",
+  "value": "&skip=0"
+ },
+ {
+  "key": "s_9cbdfa41",
+  "value": "(?:const|var|let)\\s+url\\s*=\\s*[\\\"']([^\\\"']+)[\\\"']"
+ },
+ {
+  "key": "s_b778d971",
+  "value": "/anime-izle"
+ },
+ {
+  "key": "s_73200d6c",
+  "value": "/cdn/hls/"
+ },
+ {
+  "key": "s_b01ed055",
+  "value": "/favori"
+ },
+ {
+  "key": "s_a1fbba44",
+  "value": "/giris"
+ },
+ {
+  "key": "s_de1e4cca",
+  "value": "/kategoriler/"
+ },
+ {
+  "key": "s_a4b32f21",
+  "value": "/kategoriler/1"
+ },
+ {
+  "key": "s_58131956",
+  "value": "/kategoriler/13"
+ },
+ {
+  "key": "s_a1b32a68",
+  "value": "/kategoriler/2"
+ },
+ {
+  "key": "s_eb0bb1fa",
+  "value": "/kategoriler/26"
+ },
+ {
+  "key": "s_a2b32bfb",
+  "value": "/kategoriler/3"
+ },
+ {
+  "key": "s_ef0df6dd",
+  "value": "/kategoriler/34"
+ },
+ {
+  "key": "s_a7b333da",
+  "value": "/kategoriler/4"
+ },
+ {
+  "key": "s_a8b3356d",
+  "value": "/kategoriler/5"
+ },
+ {
+  "key": "s_9bb320f6",
+  "value": "/kategoriler/8"
+ },
+ {
+  "key": "s_31cd703c",
+  "value": "/kayit"
+ },
+ {
+  "key": "s_8aa1ad9d",
+  "value": "/liste"
+ },
+ {
+  "key": "s_e5292a2b",
+  "value": "/sasirt-beni"
+ },
+ {
+  "key": "s_5a1dcc96",
+  "value": "/takvim"
+ },
+ {
+  "key": "s_4cdf63ec",
+  "value": "/tavsiyeRobotu"
+ },
+ {
+  "key": "s_46f34f83",
+  "value": "/temalar/"
+ },
+ {
+  "key": "s_f926623c",
+  "value": "/uyeol"
+ },
+ {
+  "key": "s_1ffa3b1a",
+  "value": "?0"
+ },
+ {
+  "key": "s_f5252e38",
+  "value": "\\b(19|20)\\d{2}\\b"
+ },
+ {
+  "key": "s_d1741fcd",
+  "value": "tt[0-9]{7,9}"
+ }
+]
