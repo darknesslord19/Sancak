@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Türkiye - Ulusal ve Yerel TV",
+    "desc": "Ücretsiz açık kaynak ulusal ve yerel TV yayınları (IPTV-org)",
+    "url": "https://iptv-org.github.io/iptv/countries/tr.m3u"
+  },
+  {
+    "name": "Dünya - Haber Kanalları",
+    "desc": "Uluslararası canlı haber ve bilgi kanalları",
+    "url": "https://iptv-org.github.io/iptv/categories/news.m3u"
+  },
+  {
+    "name": "Dünya - Müzik Kanalları",
+    "desc": "Popüler müzik ve radyo yayınları",
+    "url": "https://iptv-org.github.io/iptv/categories/music.m3u"
+  },
+  {
+    "name": "Dünya - Belgesel Kanalları",
+    "desc": "Doğa, bilim ve belgesel yayınları",
+    "url": "https://iptv-org.github.io/iptv/categories/documentary.m3u"
+  }
+]
