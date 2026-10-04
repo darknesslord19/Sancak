@@ -1,0 +1,18 @@
+{
+  "repos": [
+    {
+      "name": "Örnek Türkçe Repo",
+      "description": "Buraya kendi repo bilgini ekle.",
+      "icon": "",
+      "category": "Türkçe",
+      "url": "https://example.com/repo.json"
+    },
+    {
+      "name": "Örnek Global Repo",
+      "description": "Buraya kendi repo bilgini ekle.",
+      "icon": "",
+      "category": "Global",
+      "url": "https://example.com/repo.json"
+    }
+  ]
+}

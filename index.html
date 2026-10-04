@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Topluluk Repoları</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#101114;color:#f4f4f5;font-family:Arial,sans-serif}
+header{padding:20px 16px 12px;position:sticky;top:0;background:#101114;z-index:5}
+h1{margin:0 0 12px;font-size:23px}
+input{width:100%;padding:13px 14px;border:1px solid #303238;border-radius:12px;background:#191b20;color:#fff;outline:none}
+main{padding:8px 14px 24px}
+.category{margin:18px 2px 8px;font-size:13px;font-weight:700;text-transform:uppercase;opacity:.65}
+.card{padding:14px;margin-bottom:10px;border:1px solid #2b2d33;border-radius:15px;background:#17191e}
+.row{display:flex;gap:12px;align-items:center}
+.icon{width:48px;height:48px;border-radius:12px;object-fit:cover;background:#24262c;flex:none}
+.name{font-size:16px;font-weight:700}
+.desc{font-size:13px;opacity:.68;margin-top:4px;line-height:1.35}
+button{width:100%;margin-top:12px;padding:12px;border:0;border-radius:11px;background:#fff;color:#111;font-weight:700}
+.empty{padding:30px;text-align:center;opacity:.55}
+</style>
+</head>
+<body>
+<header>
+<h1>Topluluk Repoları</h1>
+<input id="search" placeholder="Repo ara...">
+</header>
+<main id="list"><div class="empty">Repolar yükleniyor...</div></main>
+
+<script>
+const JSON_URL="./repos.json";
+
+async function loadRepos(){
+  try{
+    const r=await fetch(JSON_URL,{cache:"no-store"});
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    const data=await r.json();
+    window.REPOS=data.repos||[];
+    render();
+  }catch(e){
+    document.getElementById("list").innerHTML=
+      '<div class="empty">Repo listesi yüklenemedi.<br>'+e.message+'</div>';
+  }
+}
+function render(){
+  const q=(document.getElementById("search").value||"").toLowerCase().trim();
+  const groups={};
+  window.REPOS.filter(x=>
+    !q || (x.name+" "+(x.description||"")+" "+(x.category||"")).toLowerCase().includes(q)
+  ).forEach(x=>(groups[x.category||"Diğer"]??=[]).push(x));
+
+  let out="";
+  for(const cat of Object.keys(groups)){
+    out+='<div class="category">'+escapeHtml(cat)+'</div>';
+    for(const repo of groups[cat]){
+      out+=`<div class="card">
+        <div class="row">
+          <img class="icon" src="${escapeAttr(repo.icon||"")}" onerror="this.style.visibility='hidden'">
+          <div><div class="name">${escapeHtml(repo.name||"Repo")}</div>
+          <div class="desc">${escapeHtml(repo.description||"")}</div></div>
+        </div>
+        <button onclick="installRepo('${escapeJs(repo.url||"")}')">REPOYA EKLE</button>
+      </div>`;
+    }
+  }
+  document.getElementById("list").innerHTML=out||'<div class="empty">Repo bulunamadı.</div>';
+}
+function installRepo(url){
+  if(!url)return;
+  if(window.RepoApi && RepoApi.installRepo){
+    RepoApi.installRepo(url);
+  }else{
+    alert("CloudStream RepoApi bulunamadı.");
+  }
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",""":"&quot;","'":"&#39;"}[c]));}
+function escapeAttr(s){return escapeHtml(s).replace(/`/g,"&#96;");}
+function escapeJs(s){return String(s).replace(/\\/g,"\\\\").replace(/'/g,"\\'").replace(/\n/g,"\\n").replace(/\r/g,"\\r");}
+document.getElementById("search").addEventListener("input",render);
+loadRepos();
+</script>
+</body>
+</html>
