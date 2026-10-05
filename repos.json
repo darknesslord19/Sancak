@@ -13,6 +13,16 @@
       "icon": "",
       "category": "Global",
       "url": "https://example.com/repo.json"
+    },
+    {
+  "repos": [
+    {
+      "name": "Wiolet",
+      "description": "Türkçe film, dizi ve belgesel sağlayıcıları",
+      "icon": "https://raw.githubusercontent.com/Wiojelt/TurkSinema/main/assets/logo.png",
+      "category": "Türkçe",
+      "url": "https://raw.githubusercontent.com/Wiojelt/TurkSinema/main/repo.json"
     }
+  
   ]
 }
