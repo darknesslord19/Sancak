@@ -1,11 +1,11 @@
 {
   "repos": [
     {
-      "name": "Örnek Türkçe Repo",
+      "name": "Wiolet",
       "description": "Buraya kendi repo bilgini ekle.",
       "icon": "",
       "category": "Türkçe",
-      "url": "https://example.com/repo.json"
+      "url": "https://raw.githubusercontent.com/Wiojelt/TurkSinema/main/repo.json"
     },
     {
       "name": "Örnek Global Repo",
