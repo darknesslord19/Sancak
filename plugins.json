@@ -120,26 +120,6 @@
     "fileSize": 59221
   },
   {
-    "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/SiteBridgeEklenti.cs3",
-    "status": 1,
-    "version": 1,
-    "apiVersion": 1,
-    "name": "SiteBridge",
-    "internalName": "SiteBridgeEklenti",
-    "authors": [
-      "darknesslord19"
-    ],
-    "description": "",
-    "repositoryUrl": "https://github.com/darknesslord19/Sancak",
-    "language": "tr",
-    "tvTypes": [
-      "Movie",
-      "TvSeries"
-    ],
-    "iconUrl": null,
-    "fileSize": 64332
-  },
-  {
     "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/SiteBridgeEklenti1.cs3",
     "status": 1,
     "version": 1,
