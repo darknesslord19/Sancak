@@ -160,6 +160,26 @@
     "fileSize": 41952
   },
   {
+    "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/Plugin6NuvioBridgeEklenti6.cs3",
+    "status": 1,
+    "version": 1,
+    "apiVersion": 1,
+    "name": "NuvioBridge",
+    "internalName": "Plugin6NuvioBridgeEklenti6",
+    "authors": [
+      "darknesslord19"
+    ],
+    "description": "",
+    "repositoryUrl": "https://github.com/darknesslord19/Sancak",
+    "language": "tr",
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "iconUrl": null,
+    "fileSize": 44721
+  },
+  {
     "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/StreamCenter_Turkce.cs3",
     "status": 1,
     "version": 10,
