@@ -40,6 +40,26 @@
     "fileSize": 51346
   },
   {
+    "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/DarknesLordIPTV4.cs3",
+    "status": 1,
+    "version": 1,
+    "apiVersion": 1,
+    "name": "DarknesLordIPTV",
+    "internalName": "DarknesLordIPTV4",
+    "authors": [
+      "darknesslord19"
+    ],
+    "description": "",
+    "repositoryUrl": "https://github.com/darknesslord19/Sancak",
+    "language": "tr",
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "iconUrl": null,
+    "fileSize": 43004
+  },
+  {
     "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/Dizilla.cs3",
     "status": 1,
     "version": 92,
