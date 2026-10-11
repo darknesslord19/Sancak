@@ -80,6 +80,26 @@
     "fileSize": 77098
   },
   {
+    "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/IptvBridgeEklenti.cs3",
+    "status": 1,
+    "version": 1,
+    "apiVersion": 1,
+    "name": "IptvBridge",
+    "internalName": "IptvBridgeEklenti",
+    "authors": [
+      "darknesslord19"
+    ],
+    "description": "",
+    "repositoryUrl": "https://github.com/darknesslord19/Sancak",
+    "language": "tr",
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "iconUrl": null,
+    "fileSize": 43271
+  },
+  {
     "url": "https://raw.githubusercontent.com/darknesslord19/Sancak/main/builds/NuvioBridgeEklenti7.cs3",
     "status": 1,
     "version": 1,
